@@ -1,3 +1,11 @@
+'''
+Author: Zhou Hao
+Date: 2020-12-19 18:37:42
+LastEditors: Zhou Hao
+LastEditTime: 2021-03-07 14:20:56
+Description: file conten
+E-mail: 2294776770@qq.com
+'''
 #
 # @lc app=leetcode.cn id=155 lang=python3
 #
@@ -13,7 +21,7 @@ class MinStack:
         initialize your data structure here.
         """
         self.items = []
-        self.min_stack = [math.inf]     #辅助栈
+        self.min_stack = [math.inf]     #辅助栈,保存每次push后的最小值
 
     def push(self, x: int) -> None:
         self.items.append(x)
