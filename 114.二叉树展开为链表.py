@@ -1,3 +1,11 @@
+'''
+Author: Zhou Hao
+Date: 2021-03-31 08:49:10
+LastEditors: Zhou Hao
+LastEditTime: 2021-04-06 15:05:42
+Description: file content
+E-mail: 2294776770@qq.com
+'''
 #
 # @lc app=leetcode.cn id=114 lang=python3
 #
@@ -12,6 +20,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+
+    '''recursion,postorder,DFS'''
     def flatten(self, root: TreeNode) -> None:
         """
         Do not return anything, modify root in-place instead.
