@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-06 22:21:24
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-06 22:41:06
+LastEditTime: 2021-04-07 08:49:29
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -57,6 +57,7 @@ class Solution:
         #     if node.left or node.right:
         #         dfs(depth + 1, node.left)
         #         dfs(depth + 1, node.right)
+        
         #     else:
         #         if depth > self.maxdepth:
         #             self.maxdepth = depth

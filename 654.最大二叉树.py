@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-06 15:10:05
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-06 15:24:30
+LastEditTime: 2021-04-07 14:04:18
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -14,11 +14,12 @@ E-mail: 2294776770@qq.com
 
 # @lc code=start
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        
 class Solution:
     
     '''recursion,inorder,DFS'''
