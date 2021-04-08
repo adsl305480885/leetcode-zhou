@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-07 13:40:22
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-07 17:09:53
+LastEditTime: 2021-04-08 09:22:57
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -159,6 +159,9 @@ class Codec:
 
     def deserialize(self, data):
         if not data:return []
+        
+
+        print(data)
 
         root = TreeNode(data[0])
         cur = [root]

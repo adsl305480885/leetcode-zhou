@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-06 21:04:31
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-06 21:09:44
+LastEditTime: 2021-04-08 10:22:04
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -23,7 +23,8 @@ class Node:
 
 class Solution:
     def levelOrder(self, root: 'Node') -> List[List[int]]:
-        if not root:return []
+        if not root:return 
+
         cur ,res = [root],[]
         while cur:
             next_val , lay_val = [],[]

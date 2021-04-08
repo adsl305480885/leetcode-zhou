@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-07 21:38:37
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-07 22:54:53
+LastEditTime: 2021-04-08 09:36:38
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -133,11 +133,9 @@ class Codec:
 
 
     '''BFS'''
-    #TODO
     # def serialize(self, root):
-    #     if not root:return []
+    #     if not root:return ''
         
-
     #     cur,res = [root],[]
     #     while cur:
     #         node = cur.pop(0)
@@ -156,11 +154,8 @@ class Codec:
     #     if not data:return []
 
     #     datalist = data.split(',')
-    #     print(datalist)
-    #     for d in datalist:
-    #         print(d)
-
-    #     root = TreeNode(data[0])
+        
+    #     root = TreeNode(datalist[0])
     #     cur = [root]
     #     i = 1
 
@@ -168,18 +163,18 @@ class Codec:
     #         node = cur.pop(0)
 
     #         # print(data[i])
-    #         if data[i] != '#':
+    #         if datalist[i] != '#':
     #             node.left = TreeNode(datalist[i])
     #             cur.append(node.left)
     #         i+=1
 
-    #         if data[i] != '#':
+    #         if datalist[i] != '#':
     #             node.right = TreeNode(datalist[i])
     #             cur.append(node.right)
     #         i+=1
     #     return root
 
-        
+
 
 # Your Codec object will be instantiated and called as such:
 # ser = Codec()
