@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-08 21:22:06
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-08 22:31:58
+LastEditTime: 2021-04-09 09:15:42
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -22,46 +22,45 @@ E-mail: 2294776770@qq.com
 class Solution:
     
     '''BFS'''
-    # def isCompleteTree(self, root: TreeNode) -> bool:
-        # if not root :return True
-        # if not root.left and not root.right :return True
+#     def isCompleteTree(self, root: TreeNode) -> bool:
+#         if not root :return True
+#         if not root.left and not root.right :return True
 
-        # cur,res = [root],[]
+#         cur,res = [root],[]
 
-        # while cur:
-        #     next_val , lay_val= [],[]
-        #     for node in cur:
-        #         if node:
-        #             lay_val.append(node.val)
-        #             next_val.append(node.left)
-        #             next_val.append(node.right)
-        #         else:
-        #             lay_val.append('#')
+#         while cur:
+#             next_val , lay_val= [],[]
+#             for node in cur:
+#                 if node:
+#                     lay_val.append(node.val)
+#                     next_val.append(node.left)
+#                     next_val.append(node.right)
+#                 else:
+#                     lay_val.append('#')
 
-        #     cur = next_val
-        #     res.append(lay_val)
-
-
-        # if len(set(res[-1])) == 1:res.pop()
+#             cur = next_val
+#             res.append(lay_val)
+#         print(res)
+# 5
+#         if len(set(res[-1])) == 1:res.pop()
         
-        # if len(res) >2:
-        #     for r in res[:-1]:
-        #         if r.count('#') !=0:
-        #             return False
+#         if len(res) >2:
+#             for r in res[:-1]:
+#                 if r.count('#') !=0:
+#                     return False
         
-        # null = res[-1].count('#')
-        # for v in res[-1][::-1][:null] :
-        #     if v == '#': 
-        #         null -= 1
+#         null = res[-1].count('#')
+#         for v in res[-1][::-1][:null] :
+#             if v == '#': 
+#                 null -= 1
                 
-        # return null == 0
+#         return null == 0
             
 
-
-
-    '''DFS'''
-    def isCompleteTree(self, root: TreeNode) -> bool:
         
+        
+
+
 
 
 
