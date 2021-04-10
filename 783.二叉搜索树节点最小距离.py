@@ -1,8 +1,13 @@
+# @before-stub-for-debug-begin
+from python3problem783 import *
+from typing import *
+# @before-stub-for-debug-end
+
 '''
 Author: Zhou Hao
 Date: 2021-04-09 22:25:08
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-09 22:51:04
+LastEditTime: 2021-04-10 14:14:39
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -24,30 +29,54 @@ E-mail: 2294776770@qq.com
 class Solution:
     
     '''bFS'''
-    def minDiffInBST(self, root: TreeNode) -> int:
+    # def minDiffInBST(self, root: TreeNode) -> int:
         
-        cur,res = [root],[]
-        while cur:
-            next_lay = []
-            for node in cur:
-                res.append(node.val)
-                if node.left:
-                    next_lay.append(node.left)
-                if node.right:
-                    next_lay.append(node.right)
-                cur = next_lay
+    #     cur,res = [root],[]
+    #     while cur:
+    #         next_lay = []
+    #         for node in cur:
+    #             res.append(node.val)
+    #             if node.left:
+    #                 next_lay.append(node.left)
+    #             if node.right:
+    #                 next_lay.append(node.right)
+    #             cur = next_lay
 
-        res.sort()
+    #     res.sort()
  
-        ans = float('inf')
-        for i in range(1,len(res)):
-            ans = min(ans,abs(res[i]-res[i-1]))
+    #     ans = float('inf')
+    #     for i in range(1,len(res)):
+    #         ans = min(ans,abs(res[i]-res[i-1]))
 
-        return ans
+    #     return ans
         
 
-    '''DFS'''
+    '''DFS,inorder'''
+    def minDiffInBST(self, root: TreeNode) -> int:
+        self.res= float('inf')
+        
+        ans = []
+
+        def dfs(root):
+            if not root:return float('inf')
+                
+            dfs(root.left)
+            ans.append(root.val)      
+            dfs(root.right)
+
+
+        dfs(root)
+        print(ans)
+
+
+        res = float('inf')
+        for i in range(1,len(ans)):
+            res = min(res,abs(ans[i]-ans[i-1]))
+
+        return res
+                
 
 #[71,62,84,14,null,null,88]
+#[49, 52, 69, 89, 90]
 # @lc code=end
 
