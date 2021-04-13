@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-06 19:24:47
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-06 20:43:43
+LastEditTime: 2021-04-11 20:10:13
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -26,7 +26,6 @@ class Solution:
     #     if not root:return []
 
     #     cur,res = [root],[]
-
     #     while cur:
     #         next_lay = []
     #         res.append(cur[-1].val)
@@ -57,7 +56,6 @@ class Solution:
         dfs(root,0)
 
         return res
-
 
 # @lc code=end
 
