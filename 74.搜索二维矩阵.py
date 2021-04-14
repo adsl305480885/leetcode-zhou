@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-13 22:05:42
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-13 22:38:36
+LastEditTime: 2021-04-14 09:20:46
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -13,6 +13,9 @@ E-mail: 2294776770@qq.com
 #
 
 # @lc code=start
+from typing import List
+
+
 class Solution:
     '''二分:根据索引二分'''
     # def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
