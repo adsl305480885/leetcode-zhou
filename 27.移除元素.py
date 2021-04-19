@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-01-19 21:31:34
 LastEditors: Zhou Hao
-LastEditTime: 2021-01-19 21:44:10
+LastEditTime: 2021-04-18 17:23:36
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -25,11 +25,24 @@ class Solution:
     #     return len(nums)
         
 
-    def removeElement(self, nums: List[int], val: int) -> int:
-        while val in nums:
-            nums.remove(val)
-        return len(nums)
+    # def removeElement(self, nums: List[int], val: int) -> int:
+    #     while val in nums:
+    #         nums.remove(val)
+    #     return len(nums)
         
+
+
+    '''双指针'''
+    def removeElement(self, nums: List[int], val: int) -> int:
+        slow,fast = 0,0
+        while fast < len(nums):
+            if nums[fast] != val:   #把不需要删除的元素放到前面
+                nums[slow] = nums[fast]
+                slow += 1
+            fast += 1
+        print(nums)
+
+        return slow
 
         
 # @lc code=end
