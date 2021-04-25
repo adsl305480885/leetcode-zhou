@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-01-30 16:11:05
 LastEditors: Zhou Hao
-LastEditTime: 2021-02-04 17:20:20
+LastEditTime: 2021-02-05 13:40:12
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -36,7 +36,8 @@ class Solution:
     #         elif temp > target:
     #             right -=1
                 
-
+    
+    #二分查找
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
     
         n = len(numbers)
