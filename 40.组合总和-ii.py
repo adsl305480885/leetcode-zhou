@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-22 13:35:58
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-22 13:56:21
+LastEditTime: 2021-04-26 16:57:18
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -37,10 +37,8 @@ class Solution:
                 if i > start and candidates[i-1] == candidates[i]:
                     continue
                 
-
-
                 track.append(candidates[i])
-                dfs(i+1,target-candidates[i])
+                dfs(i+1,target-candidates[i])   #因为不能重复，所以从i+1开始
                 track.pop()
             
         length = len(candidates)

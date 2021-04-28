@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-21 14:57:58
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-21 17:12:07
+LastEditTime: 2021-04-22 10:10:03
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -21,10 +21,11 @@ class Solution:
 
         def dfs(nums,track,used):
             if length == len(track):
-                res.append(track[:])
+                res.append(track[:])    #深拷贝
                 return 
 
             for i in range(len(nums)):
+                '''根据状态变量剪枝'''
                 #剪枝条件1：用过的元素不能再使用
                 #剪枝条件2：当当前元素和前一个元素值相同（此处隐含这个元素的 index>0 ），
                 #           并且前一个元素还没有被使用过的时候，我们要剪枝

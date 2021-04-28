@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-21 15:41:03
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-21 16:03:24
+LastEditTime: 2021-04-26 22:06:07
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -22,16 +22,15 @@ class Solution:
     #         print(res)
     #     return res
 
-        
 
-    '''回溯dfs'''
+    '''回溯dfs,状态变量start'''
     def subsets(self, nums: List[int]) -> List[List[int]]:
         length = len(nums)
         if length == 0:return [nums]
 
         def dfs(start):
             res.append(track[:])
-            if start >= length:return
+            if start >= length:return       #根据状态变量剪枝
 
             for i in range(start,length):
                 track.append(nums[i])

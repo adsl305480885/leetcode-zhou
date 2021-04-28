@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-26 23:06:56
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-26 23:34:07
+LastEditTime: 2021-04-27 09:19:08
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -38,11 +38,8 @@ class CombinationIterator:
         if self.res:
             return  self.res.pop(0)
 
-
     def hasNext(self) -> bool:
         return self.res != []
-
-
 
 # Your CombinationIterator object will be instantiated and called as such:
 # obj = CombinationIterator(characters, combinationLength)

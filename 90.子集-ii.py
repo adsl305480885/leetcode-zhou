@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-21 16:04:06
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-21 22:45:03
+LastEditTime: 2021-04-22 10:10:51
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -31,24 +31,24 @@ class Solution:
     #         else:index+=1
 
     #     return res
-        
+
+
+
     '''回溯dfs'''
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         def dfs(start):
             res.append(track[:])
-            # if start >= length:return
 
             for i in range(start,len(nums)):
-
-                if i >start and nums[i] == nums[i-1]:
+                '''根据状态变量剪枝'''
+                if i >start and nums[i] == nums[i-1]:       #剪枝
                     continue
 
                 track.append(nums[i])
                 dfs(i+1)
                 track.pop()
-
-
-        nums.sort()
+    
+        nums.sort()     #有重复元素一定要排序，这里的状态变量是start
         res = []
         track = []
         dfs(0)
