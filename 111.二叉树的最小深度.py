@@ -2,7 +2,7 @@
 Author: Zhou Hao
 Date: 2021-04-08 12:24:12
 LastEditors: Zhou Hao
-LastEditTime: 2021-04-08 13:14:34
+LastEditTime: 2021-05-07 11:13:03
 Description: file content
 E-mail: 2294776770@qq.com
 '''
@@ -39,6 +39,7 @@ class Solution:
     #             if not node.left and not node.right:
     #                 return res
     #         cur = next_lay
+
 
 
     '''DFS,preorder'''
