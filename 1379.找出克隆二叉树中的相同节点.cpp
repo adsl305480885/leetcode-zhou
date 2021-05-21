@@ -2,7 +2,7 @@
  * @Author: Zhou Hao
  * @Date: 2021-05-10 22:05:19
  * @LastEditors: Zhou Hao
- * @LastEditTime: 2021-05-10 22:12:07
+ * @LastEditTime: 2021-05-11 16:53:47
  * @Description: file content
  * @E-mail: 2294776770@qq.com
  */
@@ -32,11 +32,10 @@
 #include<numeric>
 using namespace std;
 
-
 class Solution {
 public:
 
-    //前序遍历
+    //前序遍历，回溯就是N叉树的前序遍历
     TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
         
         if(original == target) return cloned;
@@ -45,8 +44,9 @@ public:
         TreeNode *left = getTargetCopy(original->left,cloned->left,target);
         TreeNode *right = getTargetCopy(original->right,cloned->right,target);
 
-        return left == NULL? right:left;    //哪个不为空就返回哪个
+        return left == NULL? right:left;    //哪个不为空就返回哪个 
     }
 };
 // @lc code=end
-
+//qeqweasdzhkjshdkjahsksd
+//sdjhfjkafskjdfzhoihashdoahjjjhhhhzhioeiruiowm,nv,.zxcnvm,.nqwoiepoqwieoppiuurqpwiopasmnzx,cmn,mna,msnd,mn   qweqwe 
